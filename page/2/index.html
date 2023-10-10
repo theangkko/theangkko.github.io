@@ -33,97 +33,46 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo_taeg_yellow_500px.png" alt="theangkko&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/eefunctionmanual">eeFunction</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-08-02T16:03:58.000Z" title="8/3/2023, 1:03:58 AM">2023-08-03</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-09-02T22:40:40.000Z" title="9/3/2023, 7:40:40 AM">2023-09-03</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Excel-VBA/">Excel|VBA</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230803-vbadarkmodesettingbyREGISTRY/">WinRegistry for VBE DarkMode Quick Set-up</a></p><div class="content"><br>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo_taeg_yellow_500px.png" alt="theangkko&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/eefunctionmanual">eeFunction</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-08-02T16:03:58.000Z" title="8/3/2023, 1:03:58 AM">2023-08-03</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-09-02T22:40:40.000Z" title="9/3/2023, 7:40:40 AM">2023-09-03</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Excel-VBA/">Excel|VBA</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230803-vbadarkmodesettingbyREGISTRY/">WinRegistry for VBE DarkMode Quick Set-up</a></p><div class="content">VBA의 기본 색상정보는 흰색 바탕에 검은 색 글자입니다.
+유튜브 강좌나 블로그 글을 보면 이와 다르게, 검은 색 바탕색에 다양한 글자색으로 표현되는 DARK MODE를 사용하는 것을 볼 수 있습니다. 
 
-<p>VBA의 기본 색상정보는 흰색 바탕에 검은 색 글자입니다.<br>유튜브 강좌나 블로그 글을 보면 이와 다르게, 검은 색 바탕색에 다양한 글자색으로 표현되는 DARK MODE를 사용하는 것을 볼 수 있습니다. </p>
-<p>이를 적용해 보고자 <em>사용자가 많은</em> 네이버에서 검색을 하면 오히려 오래 전 글이나 엉뚱한 글이 같이 검색됩니다. 그래서 설정이 쉬운 반면 생각보다 사용자가 많지 않는 듯 합니다.</p>
-<p>외국 블로그나 Medium 같은 사이트에는 잘 설명된 것들이 많지만 이 것도 따라하기 귀찮다, 영어라서 어렵다 하시면 아래 REGISTRY를 다운받아서 적용하면 됩니다. Registry를 더블클릭하고 엑셀을 실행하면 적용이 완료됩니다. </p>
-<p>이 것은 엑셀프로그램 자체DLL을 수정하는 것이 아니라 VBE Editor Option에서 설정하는 메뉴를 손쉽게 Registry로 설정하는 것입니다. 그래서 VBE에서 제공하는 기본 색상 16가지 조합만 사용가능합니다.</p>
-<blockquote><p>이와 다르게 조금 더 화려한 색상의 테마를 적용하려면 다음의 Tools을 사용할 수 있습니다.  엑셀프로그램’ 패치’를 통한 것으로 자세한 사용법은 아래 링크를 참고하세요  </p>
-<p><a href="https://theangkko.github.io/2023/20230808-VBEDarkModeThemeQuick" title="target&#x3D;_blank" target="">VBE DarkMode Theme Quick App</a> </p>
-<!--  -->
-</blockquote>
+이를 적용해 보고자 사용자가 많은 네이버에서 검색을 하면 오히려 오래 전 글이나 엉뚱한 글이 같이 검색됩니다. 그래서 설정이 쉬운 반면 생각보다 사용자가 많지 않는 듯 합니다.
 
-<p><br><br><br></p>
-<p><code>**주의**</code> 열어두었던 엑셀파일이 있다면 끄고 적용해야 합니다. <br><br>File Download &gt;&gt;  <a href="/2023/20230803-vbadarkmodesettingbyREGISTRY/VBEThemeColorREG.zip" title="VBEThemeColorREG.zip">VBEThemeColorREG.zip</a></p>
-<h3 id="J-타입"><a href="#J-타입" class="headerlink" title="(J 타입)"></a><strong>(J 타입)</strong></h3><p>인터넷에서 제일 많이 보는 타입입니다. 대비가 강한 색상으로 눈에 잘 들어옵니다.</p>
-<p><img src="/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114634.png" alt="2023-08-15T114634"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"> </span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\VBA\7.1\Common]</span><br><span class="line">&quot;CODEBACKCOLORS&quot;=&quot;4 1 7 7 6 4 4 4 0 0 0 0 0 0 0 0 &quot;</span><br><span class="line">&quot;CODEFORECOLORS&quot;=&quot;1 4 5 4 1 9 7 11 0 0 0 0 0 0 0 0 &quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<a href="/2023/20230803-vbadarkmodesettingbyREGISTRY/VBEThemeColorREG_JUNPPA.reg" title="VBEThemeColorREG_JUNPPA.reg">VBEThemeColorREG_JUNPPA.reg</a>  << Save As Link
-
-<p><br><br><br></p>
-<hr>
-<h3 id="S-타입"><a href="#S-타입" class="headerlink" title="(S 타입)"></a><strong>(S 타입)</strong></h3><p>나만의 스타일로 만들어 보았습니다. 약간 어둡게 쓰고 싶어서… </p>
-<p><img src="/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114702.png" alt="2023-08-15T114702"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"> </span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\VBA\7.1\Common]</span><br><span class="line">&quot;CODEBACKCOLORS&quot;=&quot;4 16 14 13 15 4 4 4 11 9 0 0 0 0 0 0 &quot;</span><br><span class="line">&quot;CODEFORECOLORS&quot;=&quot;7 2 15 1 2 8 10 2 1 1 0 0 0 0 0 0 &quot;</span><br></pre></td></tr></table></figure>
-<a href="/2023/20230803-vbadarkmodesettingbyREGISTRY/VBEThemeColorREG_SONSON.reg" title="VBEThemeColorREG_SONSON.reg">VBEThemeColorREG_SONSON.reg</a>  << Save As Link
+외국 블로그나 Medium 같은 사이트에는 잘 설명된 것들이 많지만 이 것도 따라하기 귀찮다, 영어라서 어렵다 하시면 아래 REGISTRY를 다운받아서 </div><a class="article-more button is-small is-size-7" href="/2023/20230803-vbadarkmodesettingbyREGISTRY/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-31T13:25:36.000Z" title="7/31/2023, 10:25:36 PM">2023-07-31</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-09-02T22:40:40.000Z" title="9/3/2023, 7:40:40 AM">2023-09-03</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230731-PDFtoolspy-pdfunpw-noAnnot/">PDFtools-py_ PDF 주석 일괄제거, 암호제거</a></p><div class="content">2023-07-31 python version issue
 
 
-<p><br><br><br><br></p>
-<hr>
-<p>본인 스타일로 바꾸고 싶으면,<br><code>Alt + F11</code> 키를 누르고 VBE &gt;&gt; 옵션 &gt;&gt; Editor 포맷 항목으로 이동한 뒤 각자의 취향대로 변경해도 좋습니다. 각 개별 항목별 설정을 변경하고 저장합니다. <br><br></p>
-<p><img src="/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114743.png" alt="2023-08-15T114743"></p>
-<p><br><br><br><br></p>
-<hr>
-<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://myexcelgenius.com/coding-vba-on-the-dark-side/">https://myexcelgenius.com/coding-vba-on-the-dark-side/</a><br>설명이 잘 되어 있는 블로그</li>
-<li><a target="_blank" rel="noopener" href="https://nolongerset.com/dark-mode-in-vba/">https://nolongerset.com/dark-mode-in-vba/</a></li>
-<li><a target="_blank" rel="noopener" href="https://vineetkumar.me/2019/09/changing-vba-editor-theme/">https://vineetkumar.me/2019/09/changing-vba-editor-theme/</a></li>
-</ul>
-<p><br><br><br><br><br><br></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-31T13:25:36.000Z" title="7/31/2023, 10:25:36 PM">2023-07-31</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-09-02T22:40:40.000Z" title="9/3/2023, 7:40:40 AM">2023-09-03</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230731-PDFtoolspy-pdfunpw-noAnnot/">PDFtools-py_ PDF 주석 일괄제거, 암호제거</a></p><div class="content"><p><code>2023-07-31 python version issue</code></p>
-<br>
+https://github.com/theangkko/PDFtools-py/releases/tag/v0.9.2
 
-<p><a target="_blank" rel="noopener" href="https://github.com/theangkko/PDFtools-py/releases/tag/v0.9.2">https://github.com/theangkko/PDFtools-py/releases/tag/v0.9.2</a></p>
-<h2 id="파이썬-신규-버전"><a href="#파이썬-신규-버전" class="headerlink" title="파이썬, 신규 버전"></a>파이썬, 신규 버전</h2><p>파일을 하나씩 선택해야 하지만, 오류가 상대적으로 c#버전에 비해 적습니다.</p>
-<br>
-
-<h3 id="주요기능"><a href="#주요기능" class="headerlink" title="주요기능"></a>주요기능</h3><ul>
-<li>PDF내 주석을 일괄삭제합니다</li>
-<li>PDF수정보호(자물쇠) 상태를 해제합니다</li>
-</ul>
-<h3 id="사용가능환경"><a href="#사용가능환경" class="headerlink" title="사용가능환경)"></a>사용가능환경)</h3><ul>
-<li>윈도우</li>
-<li>MacOS<br> <em>Mac에서는.py 소스코드로는 실행가능한데, pyinstaller(실행파일 1개로 만드는) 오류로 독립 실행파일로는 동작하지 않습니다.</em></li>
-</ul>
-<h3 id="사용법"><a href="#사용법" class="headerlink" title="사용법)"></a>사용법)</h3><ol>
-<li><p>“Pick File” 버튼을 눌러, 주석제거 또는 암호해제할 pdf 파일을 선택합니다.</p>
-</li>
-<li><p>암호해제 기능과 주석제거 기능 중 원하는 기능을 선택합니다.</p>
-</li>
-<li><p>“Submit” 버튼을 눌러 작업을 실행합니다.</p>
-</li>
-</ol>
-<img src="/2023/20230731-PDFtoolspy-pdfunpw-noAnnot/2023-08-13T223823.png" width="500px">
-
-<p><br><br></p>
-<h3 id="실행파일-다운로드"><a href="#실행파일-다운로드" class="headerlink" title="실행파일 다운로드)"></a>실행파일 다운로드)</h3><p>위 링크에서 exe파일을 다운받아서 더블클릭합니다.</p>
-<img src="/2023/20230731-PDFtoolspy-pdfunpw-noAnnot/2023-08-13T223114.png" width="400px">
+파이썬, 신규 버전
+파일을 하나씩 선택해야 하지만, 오류가 상대적으로 c#버전에 비해 적습니다.
 
 
-<p><br><br><br><br><br><br></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-13T16:58:57.000Z" title="7/14/2023, 1:58:57 AM">2023-07-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-09-02T22:40:40.000Z" title="9/3/2023, 7:40:40 AM">2023-09-03</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Excel-VBA/">Excel|VBA</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230714-excelAddin-AtmyAddin/">excelAddin - 앳마의블로그 myAddin2023</a></p><div class="content"><p>엑셀 작업을 하다보면 이럴 때가 있죠?</p>
-<ul>
-<li>반복작업으로 귀찮거나 </li>
-<li>보이지 않는 공백으로 원하지 않는 결과를 얻게 되거나</li>
-<li>특정영역을 복사해서 새로운 곳에 복사하는 등…</li>
-</ul>
-<p>엑셀에 이미 있을 것 같은 기능들인데 아쉽게도 없습니다.</p>
-<p>이 때 앳마의 Excel Addin을 살펴보면 필요한 기능의 상당부분을 발견할 수 있습니다. </p>
-<p>엑셀을 자주 사용한다!<br>그럼, VBA 배우세요!!. </p>
-<p>하지만 VBA로 필요한 기능을 만들지는 마세요. 누군가는 이미 만들어서 공개한 것이 있을테니깐요.</p>
-<p>(15년 넘게 써온, 아주 좋은 애드인 입니다, 강추)</p>
-<p><a target="_blank" rel="noopener" href="https://blog.naver.com/atmyhome/223057604866">https://blog.naver.com/atmyhome/223057604866</a></p>
-<p><br><br></p>
-<!-- ![2023-07-14T020011](/2023/20230714-excelAddin-AtmyAddin/2023-07-14T020011.png) -->
-<!-- <img src=/2023/20230714-excelAddin-AtmyAddin/2023-08-15T100000.png width=600px> -->
-<img src="/2023/20230714-excelAddin-AtmyAddin/2023-08-15T100000.png" class="" width="600">
+주요기능
+ * PDF내 주석을 일괄삭제합니다
+ * PDF수정보호(자물쇠) 상태를 해제합니다
 
-<p><br><br><br><br><br><br></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-10T11:42:55.000Z" title="7/10/2023, 8:42:55 PM">2023-07-10</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-09-02T22:40:40.000Z" title="9/3/2023, 7:40:40 AM">2023-09-03</time></span><span class="level-item"><a class="link-muted" href="/categories/engineering/">engineering</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230710-ControlValvesizingOnline/">Control Valve sizing Online</a></p><div class="content"><br>
+사용가능환경)
+ * 윈도우
+ * MacOS
+   Mac에서는.py 소스코드로는 실행가능한데, pyinstaller(실행파일 1개로 만드는) 오류로 독립 실행파일로는 동작하지</div><a class="article-more button is-small is-size-7" href="/2023/20230731-PDFtoolspy-pdfunpw-noAnnot/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-13T16:58:57.000Z" title="7/14/2023, 1:58:57 AM">2023-07-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-09-02T22:40:40.000Z" title="9/3/2023, 7:40:40 AM">2023-09-03</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Excel-VBA/">Excel|VBA</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230714-excelAddin-AtmyAddin/">excelAddin - 앳마의블로그 myAddin2023</a></p><div class="content">엑셀 작업을 하다보면 이럴 때가 있죠?
+
+ * 반복작업으로 귀찮거나 
+ * 보이지 않는 공백으로 원하지 않는 결과를 얻게 되거나
+ * 특정영역을 복사해서 새로운 곳에 복사하는 등…
+
+엑셀에 이미 있을 것 같은 기능들인데 아쉽게도 없습니다.
+
+이 때 앳마의 Excel Addin을 살펴보면 필요한 기능의 상당부분을 발견할 수 있습니다. 
+
+엑셀을 자주 사용한다!
+그럼, VBA 배우세요!!. 
+
+하지만 VBA로 필요한 기능을 만들지는 마세요. 누군가는 이미 만들어서 공개한 것이 있을테니깐요.
+
+(15년 넘게 써온, 아주 좋은 애드인 입니</div><a class="article-more button is-small is-size-7" href="/2023/20230714-excelAddin-AtmyAddin/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-10T11:42:55.000Z" title="7/10/2023, 8:42:55 PM">2023-07-10</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-09-02T22:40:40.000Z" title="9/3/2023, 7:40:40 AM">2023-09-03</time></span><span class="level-item"><a class="link-muted" href="/categories/engineering/">engineering</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230710-ControlValvesizingOnline/">Control Valve sizing Online</a></p><div class="content"><br>
 
 <hr>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-09T20:40:38.000Z" title="7/10/2023, 5:40:38 AM">2023-07-10</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-10-09T12:29:16.368Z" title="10/9/2023, 9:29:16 PM">2023-10-09</time></span><span class="level-item"><a class="link-muted" href="/categories/engineering/">engineering</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230710-SearchFluidPropertyInGoogle/">Search Fluid Property In Google</a></p><div class="content">2022-07-12 update
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-09T20:40:38.000Z" title="7/10/2023, 5:40:38 AM">2023-07-10</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-10-09T12:29:16.000Z" title="10/9/2023, 9:29:16 PM">2023-10-09</time></span><span class="level-item"><a class="link-muted" href="/categories/engineering/">engineering</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230710-SearchFluidPropertyInGoogle/">Search Fluid Property In Google</a></p><div class="content">2022-07-12 update
 2022-10-30 update
 2023-03-14 add xxSteam function explanation
 
