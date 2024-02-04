@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Install CoolProp in Windows_ CoolProp 설치 - theangkko&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="theangkko&#039;s Blog"><meta name="msapplication-TileImage" content="/images/favicon_taeg_yellow.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="theangkko&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="CoolProp 홈페이지에 소개는 영어라 간단히 한글로 설명합니다. 많이들 사용하는 윈도우Windows 환경을 기준으로 유의사항을 담고 있습니다.   CoolProp 실행이 안되는 이유 공식 홈페이지 설명에 따라 설치를 했음에도 결과를 얻지 못하는 이유는 크게 3가지 입니다   * 윈도우 환경에 맞지 않은 dll파일을 설치했을 때  * 설치한 dll 파일을"><meta property="og:type" content="blog"><meta property="og:title" content="Install CoolProp in Windows_ CoolProp 설치"><meta property="og:url" content="https://theangkko.github.io/2023/20230629-CoolpropInstall/"><meta property="og:site_name" content="theangkko&#039;s Blog"><meta property="og:description" content="CoolProp 홈페이지에 소개는 영어라 간단히 한글로 설명합니다. 많이들 사용하는 윈도우Windows 환경을 기준으로 유의사항을 담고 있습니다.   CoolProp 실행이 안되는 이유 공식 홈페이지 설명에 따라 설치를 했음에도 결과를 얻지 못하는 이유는 크게 3가지 입니다   * 윈도우 환경에 맞지 않은 dll파일을 설치했을 때  * 설치한 dll 파일을"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T030857.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T041152.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T031127.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T033551.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T033608.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T033808.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T033828.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T034040.png"><meta property="article:published_time" content="2023-06-28T18:00:54.000Z"><meta property="article:modified_time" content="2024-02-03T22:07:00.000Z"><meta property="article:author" content="theangkko"><meta property="article:tag" content="coolprop"><meta property="article:tag" content="install"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T030857.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://theangkko.github.io/2023/20230629-CoolpropInstall/"},"headline":"Install CoolProp in Windows_ CoolProp 설치","image":["https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T030857.png","https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T041152.png","https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T031127.png","https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T033551.png","https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T033608.png","https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T033808.png","https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T033828.png","https://theangkko.github.io/2023/20230629-CoolpropInstall/2023-06-29T034040.png"],"datePublished":"2023-06-28T18:00:54.000Z","dateModified":"2024-02-03T22:07:00.000Z","author":{"@type":"Person","name":"theangkko"},"publisher":{"@type":"Organization","name":"theangkko's Blog","logo":{"@type":"ImageObject","url":"https://theangkko.github.io/images/logo_taeg_300.png"}},"description":"CoolProp 홈페이지에 소개는 영어라 간단히 한글로 설명합니다. 많이들 사용하는 윈도우Windows 환경을 기준으로 유의사항을 담고 있습니다.   CoolProp 실행이 안되는 이유 공식 홈페이지 설명에 따라 설치를 했음에도 결과를 얻지 못하는 이유는 크게 3가지 입니다   * 윈도우 환경에 맞지 않은 dll파일을 설치했을 때  * 설치한 dll 파일을"}</script><link rel="canonical" href="https://theangkko.github.io/2023/20230629-CoolpropInstall/"><link rel="icon" href="/images/favicon_taeg_yellow.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-dark-reasonable.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-863XY3DLGW" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-863XY3DLGW');</script><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo_taeg_300.png" alt="theangkko&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/eefunctionmanual">eeFunction</a><a class="navbar-item" href="/ddfunction">ddFunction</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-06-28T18:00:54.000Z" title="6/29/2023, 3:00:54 AM">2023-06-29</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-02-03T22:07:00.000Z" title="2/4/2024, 7:07:00 AM">2024-02-04</time></span><span class="level-item"><a class="link-muted" href="/categories/engineering/">engineering</a></span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">Install CoolProp in Windows_ CoolProp 설치</h1><div class="content"><p>CoolProp 홈페이지에 소개는 영어라 간단히 한글로 설명합니다. 많이들 사용하는 윈도우Windows 환경을 기준으로 유의사항을 담고 있습니다.</p>
+<br/>
+
+<h2 id="CoolProp-실행이-안되는-이유"><a href="#CoolProp-실행이-안되는-이유" class="headerlink" title="CoolProp 실행이 안되는 이유"></a>CoolProp 실행이 안되는 이유</h2><p>공식 홈페이지 설명에 따라 설치를 했음에도 결과를 얻지 못하는 이유는 크게 3가지 입니다</p>
+<ul>
+<li>윈도우 환경에 맞지 않은 dll파일을 설치했을 때</li>
+<li>설치한 dll 파일을 윈도우가 불러오게끔 경로설정이 안되었을 때</li>
+<li>설치한 dll 파일을 불러오는 엑셀excel용 xlam이 폴더에 없을 때</li>
+</ul>
+<hr>
+<p>Window 환경에서 프로그램을 사용할 때 확장자<code>dll</code>파일을 사용합니다. (참고로 리눅스는 <code>.so</code> &#x2F; Mac은 <code>.dylib</code>) 또한 버전에 따라서 사용해야 하는 <code>dll</code>파일명이 달라집니다. 이를 잘못 선택하면 실행이 안됩니다.</p>
+<p>맥이나 리눅스와 보다는 복잡하게, 윈도우는 dll파일을 설치하고 이를 알려주는 경로설정이 필수입니다. 그래서 dll파일을 정상적으로 불러올 때가 있고 아닐 때가 있습니다. 대부분 문제가 없습니다. 하지만 프로그램을 다른 버전으로 설치하면서 동일한 파일명이 있거나 버전별로 폴더명이 달라져 우선순위가 바뀌거나 누락되는 경우가 있습니다. 이 때 는 <strong>윈도우</strong>는 이를 인지못하고 DLL파일을 사용할 수 없게 됩니다.</p>
+<hr>
+<p><strong>경로Path</strong>를 -윈도우 환경설정- 에 등록하면 <a target="_blank" rel="noopener" href="https://yermi.tistory.com/entry/%EA%BF%80%ED%8C%81-Windows-10%EC%97%90%EC%84%9C-%ED%99%98%EA%B2%BD-%EB%B3%80%EC%88%98-%EA%B2%BD%EB%A1%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%A6%88-%ED%99%98%EA%B2%BD-%EB%B3%80%EC%88%98-Path-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">(참고)</a> CoolProp가 필요할 때 이 위치에서 불러오게 됩니다. 이 때 위에서 선택한 윈도우버전 32bit or 64bit에 맞춰 선택됩니다. </p>
+<hr>
+<p><strong>Excel</strong>이 윈도우에 설치한 DLL파일을 사용하려면 <code>.xlam</code>이라는 연결파일을 사용합니다. 이 파일은 엑셀용 Add-ins 전용폴더에서 실행시 불러옵니다. CoolProp 설치프로그램<code>exe</code>이 알아서 이 과정을 설치해 줍니다. 만약, 오류가 발생하거나 설정이 잘못되면 엑셀에서 사용을 할 수 없는 상태가 됩니다. </p>
+<p>CoolProp 연결용 <code>.xlam</code>파일은 다음폴더에 위치합니다.</p>
+<pre><code>%USERPROFILE%\AppData\Roaming\Microsoft\AddIns
+</code></pre>
+<p><br><br><br></p>
+<h2 id="윈도우용-설치파일-다운로드"><a href="#윈도우용-설치파일-다운로드" class="headerlink" title="윈도우용 설치파일 다운로드"></a>윈도우용 설치파일 다운로드</h2><p>홈페이지에 <strong>Windows Installer</strong> 소개 페이지를 살펴봅시다.<br><a target="_blank" rel="noopener" href="http://www.coolprop.org/coolprop/wrappers/Installers/index.html">http://www.coolprop.org/coolprop/wrappers/Installers/index.html</a></p>
+<p>여기에서 Shared Libraries를 사용할 것입니다.</p>
+<p><img src="/2023/20230629-CoolpropInstall/2023-06-29T030857.png" alt="2023-06-29T030857"></p>
+<p><br><br><br>홈페이지 링크를 따라가다보면,<br><code>DLL</code>설치프로그램은 초기개발시 사용했던 <a target="_blank" rel="noopener" href="https://sourceforge.net/">sourceforge.net</a> 에 등록되어 있음을 알 수 있습니다. </p>
+<p>2023년 현재 6.4.3버전이<a href="/asset/CoolProp_v6.4.3.0.zip">FILE</a> 최신입니다. 아래 링크를 통해 <code>exe</code>파일을 다운받습니다.   </p>
+<p><a target="_blank" rel="noopener" href="https://sourceforge.net/projects/coolprop/files/CoolProp/6.4.3/Installers/Windows/">https://sourceforge.net/projects/coolprop/files/CoolProp/6.4.3/Installers/Windows/</a></p>
+<p><img src="/2023/20230629-CoolpropInstall/2023-06-29T041152.png" alt="2023-06-29T041152"></p>
+<p><br><br><br></p>
+<h2 id="프로그램-설치-순서"><a href="#프로그램-설치-순서" class="headerlink" title="프로그램 설치 순서"></a>프로그램 설치 순서</h2><p>다운받은 exe 파일을 실행하면 아래 화면이 보입니다. 설치시 옵션은 2가지입니다.</p>
+<ul>
+<li><p>첫번째 항목은 CoolProp를 사용하기 위한 dll파일을 설치하고 Default<em>기본</em>으로 설정할 파일을 선택하는 것이고</p>
+</li>
+<li><p>다음 항목은 dll파일을 엑셀이나 EES에서 사용하도록 연결파일을 설치할 것인지를 선택하는 것입니다.</p>
+</li>
+</ul>
+<p>예시는,<br>64비트 윈도우에서 사용할 것으로 <code>64bit</code> library를 선택합니다.<br>그리고 두번째 항목으로 Excel, EES 모두 선택합니다.</p>
+<p>만약,<br>32비트 윈도우 사용자라면 2번째 옵션인 <code>32bit</code> stdcall library를 선택하면 됩니다.  </p>
+<p><img src="/2023/20230629-CoolpropInstall/2023-06-29T031127.png" alt="2023-06-29T031127"></p>
+<p><br><br><br>설치 후에 제대로 설치된 것인지 확인합니다. </p>
+<p>파일을 설치하고 나면 여러 개의 dll파일이 아래 경로(사용자 계정)에 설치 됩니다.<br>윈도우 탐색기에 아래 폴더로 이동하여 파일이 있는지 확인합니다.<br>아래 주소를 <strong>탐색기</strong> 주소줄에 붙여넣습니다</p>
+<pre><code>%USERPROFILE%\AppData\Roaming\CoolProp
+</code></pre>
+<img src="/2023/20230629-CoolpropInstall/2023-06-29T033551.png" width="500px" height="300px">
+
+
+<p><br><br></p>
+<hr>
+<p>엑셀 추가기능인 <code>xlam</code>확장자<a href="/asset/CoolProp.xlam">FILE</a> 파일은 다음 경로에 설치됩니다.</p>
+<pre><code>%USERPROFILE%\AppData\Roaming\Microsoft\AddIns
+</code></pre>
+<img src="/2023/20230629-CoolpropInstall/2023-06-29T033608.png" width="500px" height="300px">
+
+
+<p><br><br></p>
+<p>그리고 마지막으로 엑셀에서 <strong>추가기능</strong>으로 등록이 되어 있는지 확인합니다. (이 과정은 설치프로그램을 통해 자동으로 등록됩니다)</p>
+<p>만약, 아래처럼 CoolProp가 활성 응용프로그램 추가기능에 보이지 않는다면 - Excel <strong>추가기능</strong> - 옆에 이동버튼을 눌러 <code>xlam</code>의 파일경로를 지정해서 추가합니다.</p>
+<p><img src="/2023/20230629-CoolpropInstall/2023-06-29T033808.png" alt="2023-06-29T033808"></p>
+<p><br><br><br></p>
+<hr>
+<h2 id="CoolProp-dll-파일의-사용"><a href="#CoolProp-dll-파일의-사용" class="headerlink" title="CoolProp dll 파일의 사용"></a>CoolProp dll 파일의 사용</h2><p>설치된 dll 파일의 사용은 어느 정도 프로그래밍에 익숙한 분들이라면 큰 무리 없이 사용을 하실 것입니다. </p>
+<p>여기서는 엑셀에서의 사용 방법을 간략히 확인해 보겠습니다.<br>CoolProp.org 홈페이지에서 제공하는 TestExcel파일을 다운로드 받습니다.</p>
+<p><a href="/asset/CoolPropTestExcel.xlsx">CoolPropTestExcel.xlsx</a></p>
+<p><img src="/2023/20230629-CoolpropInstall/2023-06-29T033828.png" alt="2023-06-29T033828"></p>
+<p><br><br></p>
+<p>Test엑셀파일에 입력된  함수와 값이 제대로 작동하는지 확인합니다.</p>
+<p><img src="/2023/20230629-CoolpropInstall/2023-06-29T034040.png" alt="2023-06-29T034040"></p>
+<p><br><br><br></p>
+<hr>
+<h2 id="CoolProp-Source-File"><a href="#CoolProp-Source-File" class="headerlink" title="CoolProp Source File"></a>CoolProp Source File</h2><p>CoolProp는 C++ 언어로 작성되어 있습니다. Source Code는 깃헙Github(<a target="_blank" rel="noopener" href="https://github.com/CoolProp/CoolProp">https://github.com/CoolProp/CoolProp</a>) 에서 누구나 볼 수 있습니다. </p>
+<p>이 소스뿐만 아니라 이전 버전파일과 대용량 파일은 sourceforge.net(<a target="_blank" rel="noopener" href="https://sourceforge.net/projects/coolprop">https://sourceforge.net/projects/coolprop</a>) 에서 확인이 가능합니다.</p>
+<p><br><br><br><br><br><br></p>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/coolprop/">coolprop</a><a class="link-muted mr-2" rel="tag" href="/tags/install/">install</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="https://www.buymeacoffee.com/theangkko" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2023/20230630-ColabCoolProp01/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">CoolProp python Example 01 in Google Colab</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023/20230625-SeaWaterProperty-TEOS10-MIT/"><span class="level-item">Seawater Property (density salinity)</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://theangkko.github.io/2023/20230629-CoolpropInstall/';
+            this.page.identifier = '2023/20230629-CoolpropInstall/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'theangkko-github-io' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><!--!--><div class="column column-right is-3-tablet is-3-desktop is-3-widescreen  order-3 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/images/logo_taeg_300.png" alt="theangkko"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">theangkko</p><p class="is-size-6 is-block">Mech.&amp; Process Engineer</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">44</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">5</p></a></div></div></nav><div class="level"><a class="level-item button is-info is-outlined is-rounded" href="/" target="_self" rel="noopener">Home</a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Google-Colab/"><span class="level-start"><span class="level-item">Google Colab</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/"><span class="level-start"><span class="level-item">Programming</span></span><span class="level-end"><span class="level-item tag">28</span></span></a><ul><li><a class="level is-mobile" href="/categories/Programming/Add-ins/"><span class="level-start"><span class="level-item">Add-ins</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/Excel-VBA/"><span class="level-start"><span class="level-item">Excel|VBA</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/engineering/"><span class="level-start"><span class="level-item">engineering</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://theangkko.github.io/eefunction-doc" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">eeFunction Docs</span></span><span class="level-right"><span class="level-item tag">theangkko.github.io</span></span></a></li><li><a class="level is-mobile" href="https://eefunction.pages.dev/webapp" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">IF97 SteamTable</span></span><span class="level-right"><span class="level-item tag">eefunction.pages.dev</span></span></a></li><li><a class="level is-mobile" href="https://eefunction-webapp-streamlit.fly.dev/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">eeStreamlit</span></span><span class="level-right"><span class="level-item tag">eefunction-webapp-streamlit.fly.dev</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/images/logo_taeg_300.png" alt="theangkko&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 theangkko</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>WinRegistry for VBE DarkMode Quick Set-up - theangkko&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="theangkko&#039;s Blog"><meta name="msapplication-TileImage" content="/images/favicon_taeg_yellow.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="theangkko&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="VBA의 기본 색상정보는 흰색 바탕에 검은 색 글자입니다. 유튜브 강좌나 블로그 글을 보면 이와 다르게, 검은 색 바탕색에 다양한 글자색으로 표현되는 DARK MODE를 사용하는 것을 볼 수 있습니다.   이를 적용해 보고자 사용자가 많은 네이버에서 검색을 하면 오히려 오래 전 글이나 엉뚱한 글이 같이 검색됩니다. 그래서 설정이 쉬운 반면 생각보다 사용자가"><meta property="og:type" content="blog"><meta property="og:title" content="WinRegistry for VBE DarkMode Quick Set-up"><meta property="og:url" content="https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/"><meta property="og:site_name" content="theangkko&#039;s Blog"><meta property="og:description" content="VBA의 기본 색상정보는 흰색 바탕에 검은 색 글자입니다. 유튜브 강좌나 블로그 글을 보면 이와 다르게, 검은 색 바탕색에 다양한 글자색으로 표현되는 DARK MODE를 사용하는 것을 볼 수 있습니다.   이를 적용해 보고자 사용자가 많은 네이버에서 검색을 하면 오히려 오래 전 글이나 엉뚱한 글이 같이 검색됩니다. 그래서 설정이 쉬운 반면 생각보다 사용자가"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114634.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114702.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114743.png"><meta property="article:published_time" content="2023-08-02T16:03:58.000Z"><meta property="article:modified_time" content="2024-02-03T22:07:00.000Z"><meta property="article:author" content="theangkko"><meta property="article:tag" content="VBA"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114634.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/"},"headline":"WinRegistry for VBE DarkMode Quick Set-up","image":["https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114634.png","https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114702.png","https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114743.png"],"datePublished":"2023-08-02T16:03:58.000Z","dateModified":"2024-02-03T22:07:00.000Z","author":{"@type":"Person","name":"theangkko"},"publisher":{"@type":"Organization","name":"theangkko's Blog","logo":{"@type":"ImageObject","url":"https://theangkko.github.io/images/logo_taeg_300.png"}},"description":"VBA의 기본 색상정보는 흰색 바탕에 검은 색 글자입니다. 유튜브 강좌나 블로그 글을 보면 이와 다르게, 검은 색 바탕색에 다양한 글자색으로 표현되는 DARK MODE를 사용하는 것을 볼 수 있습니다.   이를 적용해 보고자 사용자가 많은 네이버에서 검색을 하면 오히려 오래 전 글이나 엉뚱한 글이 같이 검색됩니다. 그래서 설정이 쉬운 반면 생각보다 사용자가"}</script><link rel="canonical" href="https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/"><link rel="icon" href="/images/favicon_taeg_yellow.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-dark-reasonable.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-863XY3DLGW" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-863XY3DLGW');</script><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo_taeg_300.png" alt="theangkko&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/eefunctionmanual">eeFunction</a><a class="navbar-item" href="/ddfunction">ddFunction</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-08-02T16:03:58.000Z" title="8/3/2023, 1:03:58 AM">2023-08-03</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-02-03T22:07:00.000Z" title="2/4/2024, 7:07:00 AM">2024-02-04</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Excel-VBA/">Excel|VBA</a></span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">WinRegistry for VBE DarkMode Quick Set-up</h1><div class="content"><br>
+
+<p>VBA의 기본 색상정보는 흰색 바탕에 검은 색 글자입니다.<br>유튜브 강좌나 블로그 글을 보면 이와 다르게, 검은 색 바탕색에 다양한 글자색으로 표현되는 DARK MODE를 사용하는 것을 볼 수 있습니다. </p>
+<p>이를 적용해 보고자 <em>사용자가 많은</em> 네이버에서 검색을 하면 오히려 오래 전 글이나 엉뚱한 글이 같이 검색됩니다. 그래서 설정이 쉬운 반면 생각보다 사용자가 많지 않는 듯 합니다.</p>
+<p>외국 블로그나 Medium 같은 사이트에는 잘 설명된 것들이 많지만 이 것도 따라하기 귀찮다, 영어라서 어렵다 하시면 아래 REGISTRY를 다운받아서 적용하면 됩니다. Registry를 더블클릭하고 엑셀을 실행하면 적용이 완료됩니다. </p>
+<p>이 것은 엑셀프로그램 자체DLL을 수정하는 것이 아니라 VBE Editor Option에서 설정하는 메뉴를 손쉽게 Registry로 설정하는 것입니다. 그래서 VBE에서 제공하는 기본 색상 16가지 조합만 사용가능합니다.</p>
+<blockquote><p>이와 다르게 조금 더 화려한 색상의 테마를 적용하려면 다음의 Tools을 사용할 수 있습니다.  엑셀프로그램’ 패치’를 통한 것으로 자세한 사용법은 아래 링크를 참고하세요  </p>
+<p><a href="https://theangkko.github.io/2023/20230808-VBEDarkModeThemeQuick" title="target&#x3D;_blank" target="">VBE DarkMode Theme Quick App</a> </p>
+<!--  -->
+</blockquote>
+
+<p><br><br><br></p>
+<p><code>**주의**</code> 열어두었던 엑셀파일이 있다면 끄고 적용해야 합니다. <br><br>File Download &gt;&gt;  <a href="/2023/20230803-vbadarkmodesettingbyREGISTRY/VBEThemeColorREG.zip" title="VBEThemeColorREG.zip">VBEThemeColorREG.zip</a></p>
+<h3 id="J-타입"><a href="#J-타입" class="headerlink" title="(J 타입)"></a><strong>(J 타입)</strong></h3><p>인터넷에서 제일 많이 보는 타입입니다. 대비가 강한 색상으로 눈에 잘 들어옵니다.</p>
+<p><img src="/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114634.png" alt="2023-08-15T114634"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"> </span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\VBA\7.1\Common]</span><br><span class="line">&quot;CODEBACKCOLORS&quot;=&quot;4 1 7 7 6 4 4 4 0 0 0 0 0 0 0 0 &quot;</span><br><span class="line">&quot;CODEFORECOLORS&quot;=&quot;1 4 5 4 1 9 7 11 0 0 0 0 0 0 0 0 &quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<a href="/2023/20230803-vbadarkmodesettingbyREGISTRY/VBEThemeColorREG_JUNPPA.reg" title="VBEThemeColorREG_JUNPPA.reg">VBEThemeColorREG_JUNPPA.reg</a>  << Save As Link
+
+<p><br><br><br></p>
+<hr>
+<h3 id="S-타입"><a href="#S-타입" class="headerlink" title="(S 타입)"></a><strong>(S 타입)</strong></h3><p>나만의 스타일로 만들어 보았습니다. 약간 어둡게 쓰고 싶어서… </p>
+<p><img src="/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114702.png" alt="2023-08-15T114702"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"> </span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\VBA\7.1\Common]</span><br><span class="line">&quot;CODEBACKCOLORS&quot;=&quot;4 16 14 13 15 4 4 4 11 9 0 0 0 0 0 0 &quot;</span><br><span class="line">&quot;CODEFORECOLORS&quot;=&quot;7 2 15 1 2 8 10 2 1 1 0 0 0 0 0 0 &quot;</span><br></pre></td></tr></table></figure>
+<a href="/2023/20230803-vbadarkmodesettingbyREGISTRY/VBEThemeColorREG_SONSON.reg" title="VBEThemeColorREG_SONSON.reg">VBEThemeColorREG_SONSON.reg</a>  << Save As Link
+
+
+<p><br><br><br><br></p>
+<hr>
+<p>본인 스타일로 바꾸고 싶으면,<br><code>Alt + F11</code> 키를 누르고 VBE &gt;&gt; 옵션 &gt;&gt; Editor 포맷 항목으로 이동한 뒤 각자의 취향대로 변경해도 좋습니다. 각 개별 항목별 설정을 변경하고 저장합니다. <br><br></p>
+<p><img src="/2023/20230803-vbadarkmodesettingbyREGISTRY/2023-08-15T114743.png" alt="2023-08-15T114743"></p>
+<p><br><br><br><br></p>
+<hr>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://myexcelgenius.com/coding-vba-on-the-dark-side/">https://myexcelgenius.com/coding-vba-on-the-dark-side/</a><br>설명이 잘 되어 있는 블로그</li>
+<li><a target="_blank" rel="noopener" href="https://nolongerset.com/dark-mode-in-vba/">https://nolongerset.com/dark-mode-in-vba/</a></li>
+<li><a target="_blank" rel="noopener" href="https://vineetkumar.me/2019/09/changing-vba-editor-theme/">https://vineetkumar.me/2019/09/changing-vba-editor-theme/</a></li>
+</ul>
+<p><br><br><br><br><br><br></p>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/VBA/">VBA</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="https://www.buymeacoffee.com/theangkko" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2023/20230808-VBEDarkModeThemeQuick/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">VBE DarkMode Theme Quick App</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023/20230731-PDFtoolspy-pdfunpw-noAnnot/"><span class="level-item">PDFtools-py_ PDF 주석 일괄제거, 암호제거</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://theangkko.github.io/2023/20230803-vbadarkmodesettingbyREGISTRY/';
+            this.page.identifier = '2023/20230803-vbadarkmodesettingbyREGISTRY/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'theangkko-github-io' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><!--!--><div class="column column-right is-3-tablet is-3-desktop is-3-widescreen  order-3 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/images/logo_taeg_300.png" alt="theangkko"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">theangkko</p><p class="is-size-6 is-block">Mech.&amp; Process Engineer</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">44</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">5</p></a></div></div></nav><div class="level"><a class="level-item button is-info is-outlined is-rounded" href="/" target="_self" rel="noopener">Home</a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#J-타입"><span class="level-left"><span class="level-item">1</span><span class="level-item">(J 타입)</span></span></a></li><li><a class="level is-mobile" href="#S-타입"><span class="level-left"><span class="level-item">2</span><span class="level-item">(S 타입)</span></span></a></li><li><a class="level is-mobile" href="#Reference"><span class="level-left"><span class="level-item">3</span><span class="level-item">Reference</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Google-Colab/"><span class="level-start"><span class="level-item">Google Colab</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/"><span class="level-start"><span class="level-item">Programming</span></span><span class="level-end"><span class="level-item tag">28</span></span></a><ul><li><a class="level is-mobile" href="/categories/Programming/Add-ins/"><span class="level-start"><span class="level-item">Add-ins</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/Excel-VBA/"><span class="level-start"><span class="level-item">Excel|VBA</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/engineering/"><span class="level-start"><span class="level-item">engineering</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://theangkko.github.io/eefunction-doc" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">eeFunction Docs</span></span><span class="level-right"><span class="level-item tag">theangkko.github.io</span></span></a></li><li><a class="level is-mobile" href="https://eefunction.pages.dev/webapp" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">IF97 SteamTable</span></span><span class="level-right"><span class="level-item tag">eefunction.pages.dev</span></span></a></li><li><a class="level is-mobile" href="https://eefunction-webapp-streamlit.fly.dev/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">eeStreamlit</span></span><span class="level-right"><span class="level-item tag">eefunction-webapp-streamlit.fly.dev</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/images/logo_taeg_300.png" alt="theangkko&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 theangkko</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>-eeFunction- Office Add-ins - theangkko&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="theangkko&#039;s Blog"><meta name="msapplication-TileImage" content="/images/favicon_taeg_yellow.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="theangkko&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="eeFunction은 Fluid mechanics, Thermodynamics을 위한 Excel Addin 입니다. 인터넷에 공유된 source code를 기반으로 엑셀에서의 다양한 -사용자함수-를 제공합니다. 개인&amp;#x2F;기업에서 무료Free로 사용할 수 있습니다.   Goto eeFunction Docs        Quick Start for Web-Exce"><meta property="og:type" content="blog"><meta property="og:title" content="-eeFunction- Office Add-ins"><meta property="og:url" content="https://theangkko.github.io/eefunctionmanual/index.html"><meta property="og:site_name" content="theangkko&#039;s Blog"><meta property="og:description" content="eeFunction은 Fluid mechanics, Thermodynamics을 위한 Excel Addin 입니다. 인터넷에 공유된 source code를 기반으로 엑셀에서의 다양한 -사용자함수-를 제공합니다. 개인&amp;#x2F;기업에서 무료Free로 사용할 수 있습니다.   Goto eeFunction Docs        Quick Start for Web-Exce"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://theangkko.github.io/eefunctionmanual/eefunction002.png"><meta property="og:image" content="https://learn.microsoft.com/en-us/office/dev/add-ins/images/spherevolumenew.gif"><meta property="og:image" content="https://theangkko.github.io/images/eefunction/230531_ee010InputFunction.jpg"><meta property="og:image" content="https://theangkko.github.io/images/eefunction/230531_ee011InputFunction.jpg"><meta property="og:image" content="https://theangkko.github.io/images/eefunction/230531_ee012InputFunction.jpg"><meta property="og:image" content="https://theangkko.github.io/images/eefunction/230531_ee013InputFunction.jpg"><meta property="article:published_time" content="2023-05-23T14:45:35.000Z"><meta property="article:modified_time" content="2024-02-03T22:07:00.000Z"><meta property="article:author" content="theangkko"><meta property="article:tag" content="eeFunction"><meta property="article:tag" content="Office add-in"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://theangkko.github.io/eefunctionmanual/eefunction002.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://theangkko.github.io/eefunctionmanual/index.html"},"headline":"-eeFunction- Office Add-ins","image":["https://theangkko.github.io/eefunctionmanual/eefunction002.png","https://learn.microsoft.com/en-us/office/dev/add-ins/images/spherevolumenew.gif","https://theangkko.github.io/images/eefunction/230531_ee010InputFunction.jpg","https://theangkko.github.io/images/eefunction/230531_ee011InputFunction.jpg","https://theangkko.github.io/images/eefunction/230531_ee012InputFunction.jpg","https://theangkko.github.io/images/eefunction/230531_ee013InputFunction.jpg"],"datePublished":"2023-05-23T14:45:35.000Z","dateModified":"2024-02-03T22:07:00.000Z","author":{"@type":"Person","name":"theangkko"},"publisher":{"@type":"Organization","name":"theangkko's Blog","logo":{"@type":"ImageObject","url":"https://theangkko.github.io/images/logo_taeg_300.png"}},"description":"eeFunction은 Fluid mechanics, Thermodynamics을 위한 Excel Addin 입니다. 인터넷에 공유된 source code를 기반으로 엑셀에서의 다양한 -사용자함수-를 제공합니다. 개인&#x2F;기업에서 무료Free로 사용할 수 있습니다.   Goto eeFunction Docs        Quick Start for Web-Exce"}</script><link rel="canonical" href="https://theangkko.github.io/eefunctionmanual/index.html"><link rel="icon" href="/images/favicon_taeg_yellow.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-dark-reasonable.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-863XY3DLGW" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-863XY3DLGW');</script><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo_taeg_300.png" alt="theangkko&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item is-active" href="/eefunctionmanual">eeFunction</a><a class="navbar-item" href="/ddfunction">ddFunction</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><h1 class="title is-3 is-size-4-mobile">-eeFunction- Office Add-ins</h1><div class="content"><p><code>eeFunction</code>은 Fluid mechanics, Thermodynamics을 위한 Excel Addin 입니다.<br>인터넷에 공유된 source code를 기반으로 엑셀에서의 다양한 -사용자함수-를 제공합니다.<br>개인&#x2F;기업에서 무료Free로 사용할 수 있습니다.</p>
+<br/>
+
+
+<!-- manifest download with URL -->
+<!-- <button id="popupsite" class="custom-btn btn-15">eeFunction Docs </button> -->
+
+<a href="https://theangkko.github.io/eefunction-doc" target="_blank" rel="noopener">
+<button id="popupsite2" class="cc-btn">Goto eeFunction Docs </button>
+</a>
+
+
+
+
+<p><br/><br/></p>
+<hr>
+<h2 id="Quick-Start-for-Web-Excel"><a href="#Quick-Start-for-Web-Excel" class="headerlink" title="Quick Start for Web-Excel"></a>Quick Start for Web-Excel</h2><h3 id="1-Download-manifest-for-eeFunction"><a href="#1-Download-manifest-for-eeFunction" class="headerlink" title="1) Download manifest for eeFunction"></a>1) Download manifest for eeFunction</h3><p>터미널Terminal 또는 명령프롬프트CMD 창에서 아래 명령어를 입력하거나 Download 버튼을 눌러 Add-in 설치용 ‘manifest_eeFunction.xml’을 다운받습니다.</p>
+
+<!-- manifest download with URL -->
+<button id="hwtop" class="custom-btn btn-5">Download Manifest </button>
+<script type="text/javascript">
+    var hwtop = document.getElementById('hwtop');
+    hwtop.addEventListener('click', function () {
+        // Usage: Call the `downloadRawFile` function with the raw file URL
+        const rawFileUrl = 'https://eefunction.pages.dev/manifest_eeFunction.xml';
+        downloadRawFile(rawFileUrl);
+    })
+
+    function downloadRawFile(url) {
+        fetch(url)
+            .then(response => response.blob())
+            .then(blob => {
+                // Create a temporary link element
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = getFileNameFromUrl(url);
+
+                // Simulate a click on the link element to trigger the download
+                link.click();
+
+                // Clean up the temporary link
+                URL.revokeObjectURL(link.href);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+    function getFileNameFromUrl(url) {
+        // Extract the file name from the URL
+        const parts = url.split('/');
+        return parts[parts.length - 1];
+    }
+</script>
+
+
+
+<figure class="highlight plaintext"><figcaption><span>powershell or bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl.exe --output C:\manifest/manifest_eeFunction.xml --url https://eefunction.pages.dev/manifest_eeFunction.xml --ssl-no-revoke</span><br></pre></td></tr></table></figure>
+
+<!-- ![](https://img.shields.io/github/v/release/theangkko/eeFunctionDEV?logo=github) -->
+
+<br/>
+<br/>
+
+
+<h3 id="2-Upload-Add-in"><a href="#2-Upload-Add-in" class="headerlink" title="2) Upload Add-in"></a>2) Upload Add-in</h3><p>Web브라우저(Chrome&#x2F;MS Edge&#x2F;Safari)에서 Office365-WebExcel 파일을 엽니다.</p>
+<a href="https://1drv.ms/x/s!AjtDw6AXQrGwhQhqCuBs0-sIuzQP?e=fqTwO5" title="webExcel" target="_blank">webExcel File</a>
+
+
+
+<p>Shared Folder: <a target="_blank" rel="noopener" href="https://1drv.ms/f/s!AjtDw6AXQrGwhQcErmClmFVoxmPh?e=ORakqb">O365 OneDrive</a></p>
+<!-- ![Web-Excel](/images/eefunction/eefunction001.png) -->
+<p><img src="/eefunctionmanual/eefunction002.png" alt="Web-Excel"></p>
+<p>(KOR)</p>
+<ul>
+<li>“추가기능” 메뉴를 선택합니다.</li>
+<li>“내 추가기능 업로드”을 선택합니다.</li>
+<li>다운받은 파일 -manifest_eeFunction.xml-을 업로드 합니다.</li>
+<li>엑셀 상단메뉴바에 -eeFunction-이 추가되면 기능을 사용할 수 있습니다.</li>
+</ul>
+<p>(ENG)</p>
+<ul>
+<li>Select “Add-ins” in Top ribbon menu</li>
+<li>Select “Upload My Add-in”</li>
+<li>Upload the file -manifest_eeFunction.xml-</li>
+<li>Use custom function if -eeFunction- title shows at excel ribbon MenuBar</li>
+</ul>
+<p><br/><br/><br/><br/></p>
+<hr>
+<h3 id="Office-Add-ins-사용환경"><a href="#Office-Add-ins-사용환경" class="headerlink" title="Office Add-ins 사용환경"></a>Office Add-ins 사용환경</h3><p>Office Add-ins의 기능은 Microsoft 홈페이지에 표기된 사양에 따라 <del>엑셀2016버전</del> <strong>엑셀2021</strong> 이상에서 실행가능합니다.<br>또한 맥Mac, Office365-Web버전에서도 사용가능합니다</p>
+<blockquote><p>Note that Excel custom functions are available on the following platforms.</p>
+<ul>
+<li>Office on Windows<ul>
+<li>Microsoft 365 subscription</li>
+<li>retail perpetual Office 2016 and later</li>
+</ul>
+</li>
+<li>Office on Mac</li>
+<li>Office on the web</li>
+</ul>
+<p>Excel custom functions are currently not supported in the following:   </p>
+<ul>
+<li>Office on iPad</li>
+<li>volume-licensed perpetual versions of Office 2019 or earlier</li>
+</ul>
+</blockquote>
+
+<br/> 
+<br/> 
+
+
+<h3 id="How-to-use-사용방법"><a href="#How-to-use-사용방법" class="headerlink" title="How to use 사용방법"></a>How to use 사용방법</h3><p>엑셀 기본함수 외에, 추가로 사용자함수(UDF)를 쓰려면 VBA을 사용합니다.<br>Office Add-ins에서도 <code>Javascript API</code>를 사용하여 VBA와 유사한 기능을 제공합니다. 이를 <strong>Custom Function</strong>이라고 하며, eeFunction은 이러한 기능의 집합입니다.</p>
+<p>간단한 사용법은 아래 영상을 참고하십시오.</p>
+<p><img src="https://learn.microsoft.com/en-us/office/dev/add-ins/images/spherevolumenew.gif"></p>
+<br/>
+<br/>
+<br/>
+   
+<p>엑셀 기본함수와 동일하게 함수입력창(fx)에 <code>=</code>를 입력하면 Custom Function을 사용할 수 있습니다. 사용하려는 함수명을 입력하면 사용가능한 함수 목록이 보입니다.<br>예를 들어, <code>=air</code> 라고만 입력하더라도 함수명에 air를 포함하고 있으면 모두 표시가 됩니다.</p>
+<img src="/images/eefunction/230531_ee010InputFunction.jpg" width="400px" height="300px">    
+ 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+   
+<p>자동완성 기능 활용하면 함수명을 모두 입력하지 않고 손쉽게 사용할 수 있습니다. 위에서 <code>=air</code> 라고 입력한 상태에서 방향키 위&#x2F;아래로 사용하려는 함수를 선택합니다. 그리고 <code>TAB</code>키를 누르면 나머지 부분이 완성됩니다.</p>
+<img src="/images/eefunction/230531_ee011InputFunction.jpg" width="300px" height="300px">
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<p>eeFunction에서 사용가능한 <strong>모든 함수</strong>의 목록을 보려면 <code>=ee.</code>를 입력합니다.   </p>
+<img src="/images/eefunction/230531_ee012InputFunction.jpg" width="500px" height="300px">
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<p>상세한 설명과 도움말을 보려면 함수입력창의 (fx)를 클릭하고 -범주선택-에서 <strong>eeFunction</strong>을 선택하면 함수목록과 각 함수의 상세설명을 볼 수 있습니다. </p>
+<img src="/images/eefunction/230531_ee013InputFunction.jpg" width="500px" height="300px">
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<hr>
+<h2 id="Custom-Function-List-Description"><a href="#Custom-Function-List-Description" class="headerlink" title="Custom Function List &amp; Description"></a>Custom Function List &amp; Description</h2><p>사용가능한 함수 목록을 필요에 따라 업데이트가 됩니다.<br>전체목록과 상세설명을 확인하려면 <a href="https://theangkko.github.io/eefunctionunit/">eeFunction List</a>에서 확인할 수 있습니다.</p>
+<p>그 외에 eeFunction에서 참고하는 Open Source library는 아래 링크들을 통해 확인 가능합니다.</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/kpatvt/xsteam2">xsteam2</a> by kpatvt</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/TorrensJoaquin/GERG2008/">GERG2008</a> by TorrensJoaquin</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/psychrometrics/psychrolib">psychrolib</a> by psychrometrics</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/dvd101x/web-thermodynamics">web-thermodynamics</a> by dvd101x</li>
+<li><a target="_blank" rel="noopener" href="http://www.coolprop.org/">CoolProp.org</a></li>
+</ul>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<hr>
+<h2 id="Update-for-Latest-version"><a href="#Update-for-Latest-version" class="headerlink" title="Update for Latest version"></a>Update for Latest version</h2><p>With ManifestUpdater,<br>latest version of manifest.xml will be downloaded at <code>c:\manifest</code> folder.</p>
+
+<!-- manifest download with URL -->
+<button id="hwtop2" class="custom-btn btn-5">Download ManifestUpdater </button>
+<script type="text/javascript">
+    var hwtop2 = document.getElementById('hwtop2');
+    hwtop2.addEventListener('click', function () {
+        // Usage: Call the `downloadRawFile` function with the raw file URL
+        // const rawFileUrl = 'https://eefunction.pages.dev/DownloadLatestManifest_eeFunction.cmd';
+        const rawFileUrl = 'https://eefunction.pages.dev/manifest_download_eeFunction.cmd';
+        downloadRawFile(rawFileUrl);
+    })    
+</script>
+
+
+<p></p>
+
+<p><a target="_blank" rel="noopener" href="https://eefunction.pages.dev/manifest_download_eeFunction.cmd">https://eefunction.pages.dev/manifest_download_eeFunction.cmd</a></p>
+<p>In Chrome&#x2F;Edge&#x2F;Safari web-browser, <strong>re-upload</strong> your manifest.xml file.</p>
+<p><br/><br/><br/><br/><br><br/><br/><br/><br/></p>
+<hr>
+<h2 id="Install-for-Desktop-App"><a href="#Install-for-Desktop-App" class="headerlink" title="Install for Desktop App"></a>Install for Desktop App</h2><p>webExcel에서는 manifest 파일을 업로드하면 간편하게 사용이 가능합니다. 하지만 Desktop App(설치형 엑셀)에서는 설치방법이 조금 더 복잡합니다. Desktop App에서 사용하려면 아래 절차에 따라 설치하십시오.<br> <code>유의: 일부기능은 Desktop App에서 동작하지 않습니다</code></p>
+<ul>
+<li>현재 실행중인 엑셀파일을 저장하시고 -종료-를 합니다.</li>
+<li>아래 명령어을 실행시켜 필요한 절차를 밟습니다</li>
+<li>엑셀을 실행하여 상단 메뉴에 eeFunction이 표시되는지 확인됩니다.<br> 만약, 정상적으로 표시되지 않는다면 <strong>재부팅</strong>을 실시합니다.</li>
+</ul>
+<br/>
+
+<figure class="highlight plaintext"><figcaption><span>for desktop app</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl.exe https://github.com/underconstruction</span><br></pre></td></tr></table></figure>
+
+<br/>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@glorious/demo@0.11.12/dist/gdemo.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
+<script src="//cdn.jsdelivr.net/npm/@glorious/demo@0.11.12/dist/gdemo.min.js"></script>
+<div id='demo-teriminal-1' style='height: 70px'></div>
+<script>
+new GDemo('#demo-teriminal-1')
+  .openApp('terminal', {minHeight: '70px', windowTitle: 'zsh', promptString: '$'})
+  .command(`curl<span class="token punctuation">.</span>exe https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>underconstruction <span class="token constant">WAITING</span> <span class="token constant">UPDATE</span> <span class="token constant">COMMAND</span>`, {onCompleteDelay: 500})
+  .respond(``)
+  .end();
+</script>  
+
+<br/>
+<br/>
+
+<hr>
+<p>-END-</p>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/"></a><a class="link-muted mr-2" rel="tag" href="/"></a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="https://www.buymeacoffee.com/theangkko" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a></div></div></div><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://theangkko.github.io/eefunctionmanual/index.html';
+            this.page.identifier = 'eefunctionmanual/index.html';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'theangkko-github-io' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><!--!--><div class="column column-right is-3-tablet is-3-desktop is-3-widescreen  order-3 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/images/logo_taeg_300.png" alt="theangkko"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">theangkko</p><p class="is-size-6 is-block">Mech.&amp; Process Engineer</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">44</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">5</p></a></div></div></nav><div class="level"><a class="level-item button is-info is-outlined is-rounded" href="/" target="_self" rel="noopener">Home</a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#Quick-Start-for-Web-Excel"><span class="level-left"><span class="level-item">1</span><span class="level-item">Quick Start for Web-Excel</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-Download-manifest-for-eeFunction"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">1) Download manifest for eeFunction</span></span></a></li><li><a class="level is-mobile" href="#2-Upload-Add-in"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">2) Upload Add-in</span></span></a></li><li><a class="level is-mobile" href="#Office-Add-ins-사용환경"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">Office Add-ins 사용환경</span></span></a></li><li><a class="level is-mobile" href="#How-to-use-사용방법"><span class="level-left"><span class="level-item">1.4</span><span class="level-item">How to use 사용방법</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Custom-Function-List-Description"><span class="level-left"><span class="level-item">2</span><span class="level-item">Custom Function List &amp; Description</span></span></a></li><li><a class="level is-mobile" href="#Update-for-Latest-version"><span class="level-left"><span class="level-item">3</span><span class="level-item">Update for Latest version</span></span></a></li><li><a class="level is-mobile" href="#Install-for-Desktop-App"><span class="level-left"><span class="level-item">4</span><span class="level-item">Install for Desktop App</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Google-Colab/"><span class="level-start"><span class="level-item">Google Colab</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/"><span class="level-start"><span class="level-item">Programming</span></span><span class="level-end"><span class="level-item tag">28</span></span></a><ul><li><a class="level is-mobile" href="/categories/Programming/Add-ins/"><span class="level-start"><span class="level-item">Add-ins</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/Excel-VBA/"><span class="level-start"><span class="level-item">Excel|VBA</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/engineering/"><span class="level-start"><span class="level-item">engineering</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://theangkko.github.io/eefunction-doc" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">eeFunction Docs</span></span><span class="level-right"><span class="level-item tag">theangkko.github.io</span></span></a></li><li><a class="level is-mobile" href="https://eefunction.pages.dev/webapp" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">IF97 SteamTable</span></span><span class="level-right"><span class="level-item tag">eefunction.pages.dev</span></span></a></li><li><a class="level is-mobile" href="https://eefunction-webapp-streamlit.fly.dev/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">eeStreamlit</span></span><span class="level-right"><span class="level-item tag">eefunction-webapp-streamlit.fly.dev</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/images/logo_taeg_300.png" alt="theangkko&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 theangkko</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

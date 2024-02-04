@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>VBA to OfficeJS Web Add-in으로의 전환 - theangkko&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="theangkko&#039;s Blog"><meta name="msapplication-TileImage" content="/images/favicon_taeg_yellow.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="theangkko&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="개요 엑셀에서의 자동화와 복잡한 계산은 VBA를 사용하는 것이 일반적입니다.  Excel C-API를 사용하는 XLL과 VSTO도 있지만 어느 정도 개발언어를 다룰 줄 알아야 하기에 일반적이라고 말하긴 어려울 것 같습니다. 또한 Windows PC에서만 사용할 수 있는 것이 제한사항입니다.   2010년 중반, MS가 클라우드 서비스에 집중하면서 Offic"><meta property="og:type" content="blog"><meta property="og:title" content="VBA to OfficeJS Web Add-in으로의 전환"><meta property="og:url" content="https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/"><meta property="og:site_name" content="theangkko&#039;s Blog"><meta property="og:description" content="개요 엑셀에서의 자동화와 복잡한 계산은 VBA를 사용하는 것이 일반적입니다.  Excel C-API를 사용하는 XLL과 VSTO도 있지만 어느 정도 개발언어를 다룰 줄 알아야 하기에 일반적이라고 말하긴 어려울 것 같습니다. 또한 Windows PC에서만 사용할 수 있는 것이 제한사항입니다.   2010년 중반, MS가 클라우드 서비스에 집중하면서 Offic"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T075735.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081812.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081823.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081834.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081844.png"><meta property="og:image" content="https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081855.png"><meta property="article:published_time" content="2023-09-02T22:45:35.000Z"><meta property="article:modified_time" content="2024-02-03T22:07:00.000Z"><meta property="article:author" content="theangkko"><meta property="article:tag" content="VBA"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T075735.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/"},"headline":"VBA to OfficeJS Web Add-in으로의 전환","image":["https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T075735.png","https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081812.png","https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081823.png","https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081834.png","https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081844.png","https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081855.png"],"datePublished":"2023-09-02T22:45:35.000Z","dateModified":"2024-02-03T22:07:00.000Z","author":{"@type":"Person","name":"theangkko"},"publisher":{"@type":"Organization","name":"theangkko's Blog","logo":{"@type":"ImageObject","url":"https://theangkko.github.io/images/logo_taeg_300.png"}},"description":"개요 엑셀에서의 자동화와 복잡한 계산은 VBA를 사용하는 것이 일반적입니다.  Excel C-API를 사용하는 XLL과 VSTO도 있지만 어느 정도 개발언어를 다룰 줄 알아야 하기에 일반적이라고 말하긴 어려울 것 같습니다. 또한 Windows PC에서만 사용할 수 있는 것이 제한사항입니다.   2010년 중반, MS가 클라우드 서비스에 집중하면서 Offic"}</script><link rel="canonical" href="https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/"><link rel="icon" href="/images/favicon_taeg_yellow.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-dark-reasonable.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-863XY3DLGW" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-863XY3DLGW');</script><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo_taeg_300.png" alt="theangkko&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/eefunctionmanual">eeFunction</a><a class="navbar-item" href="/ddfunction">ddFunction</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-09-02T22:45:35.000Z" title="9/3/2023, 7:45:35 AM">2023-09-03</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-02-03T22:07:00.000Z" title="2/4/2024, 7:07:00 AM">2024-02-04</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Excel-VBA/">Excel|VBA</a></span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">VBA to OfficeJS Web Add-in으로의 전환</h1><div class="content"><br>
+
+<h2 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h2><p>엑셀에서의 자동화와 복잡한 계산은 VBA를 사용하는 것이 일반적입니다.   <br>  Excel C-API를 사용하는 XLL과 VSTO도 있지만 어느 정도 개발언어를 다룰 줄 알아야 하기에 일반적이라고 말하긴 어려울 것 같습니다. 또한 Windows PC에서만 사용할 수 있는 것이 제한사항입니다. </p>
+<p>2010년 중반, MS가 클라우드 서비스에 집중하면서 Office_엑셀은 이제 WindowPC 뿐만 아니라 Mac맥과 Linux로의 사용환경도 확대되었습니다. 이 때 즈음 OfficeJS(Javascript)라는 VBA를 대체할 만한 새로운 환경을 만들었지만 23년 현재에도 여전히 많이 사용되지는 않습니다. 하지만 몇 년을 사용하다보니 브라우저 기반의 작업을 하는 사람 들에게는 JavaScript기반 OfficeJS Add-in을 활용하는 것도 나쁘지 않다고 생각됩니다. </p>
+<p> <del>이런저런 기사들을 보면 앞으로 몇 년 뒤에도 여전히 vba를 사용하는 사람들이 많겠지만,  javasciprt(typescript)나 파이썬을 활용해서 vba를 대신할 무언가도 많이 쓸 세상으로 바뀌어 있을 것 같다는 것다는 생각입니다.</del><br> <em>2년 전 제 생각은 틀렸습니다. OfficeJS가 만들고 배포가 그렇게 쉽지만은 않습니다.</em></p>
+<p><br><br></p>
+<p>MS Excel엑셀은 개인PC에서 오프라인으로 작업이 가능합니다. 반면 비슷하지만 웹Web에서만 사용가능한, 그리고 무료인 구글스프레드시트는 태생이 온라인입니다. 그렇다 보니 브라우저에서 모든? 것을 실행합니다. WEB에서 실행되기에 Javavscript기반의 구글스프레드시트는 VBA와 비슷한 기능을 하는 App-Script라는 기능을 가지고 있습니다. 사용해 보면 VBA와 차이가 없을 뿐더러 정말 그 기능의 편리함을 느끼게 됩니다. 이와 비교하면 MS엑셀이 오래 전 개발을 중단한 예전 프로그램처럼 느껴집니다. 이것이 경쟁의 요소가 되었는지 2017년~전후로 MS의 엑셀도 javascript기반의 OfficeJS Add-in(vba와 동일한 기능을 가진)을 내놓았습니다. VBA와 같은 custom function addin을 온라인&#x2F;오프라인 엑셀에서 사용할 수가 있게 된 것입니다. 그리고 몇 년이 지난 지금은 꽤나 vba를 대신할 것처럼 많은 기능을 지원합니다.</p>
+<ul>
+<li>ScriptLab 이라는 javascript기반의 vba매크로기록기 같은 것도 생겼고</li>
+<li>vscode에서 또는 yo generator office addin을 통한 JS Web add-in 을 만들어서 사용할 수 있습니다.</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/office/dev/scripts/resources/vba-differences">https://docs.microsoft.com/en-us/office/dev/scripts/resources/vba-differences</a></p>
+<img src="/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T075735.png" class="" width="600">
+
+<p><br><br></p>
+<blockquote><p><a target="_blank" rel="noopener" href="https://zdnet.co.kr/view/?no=20201113094632">https://zdnet.co.kr/view/?no=20201113094632</a>  (귀섬의 MS합류 기사)    <br><br>2020년도에는 python 창시자 ‘귀도 반 로섬’이 MS 로 합류했다고 해서 vba &gt;&gt; python으로 해줄까 싶었는데 그건 아닐 것 같고 몇 년 뒤에는 파이썬의 openpyxl, xlwings 같은 파이썬 기반의 툴이 하나 더 나올지도 모르겠다. 그렇다면 파이썬이 또 한번 인기가 올라가겠지만 최근 PowerBI에서 파이썬 언어와 쿵짝?을 하는 기능들이 추가되는 것을 보면 파이썬을 활용은 꼭 excel이 아닐 수도 있다.</p>
+</blockquote>
+
+
+<p><br><br><br></p>
+<hr>
+<h2 id="Javascript가-아닌-파이썬은-어떤가"><a href="#Javascript가-아닌-파이썬은-어떤가" class="headerlink" title="Javascript가 아닌, 파이썬은 어떤가?"></a>Javascript가 아닌, 파이썬은 어떤가?</h2><p>최근 몇 년간 빅데이터, AI관련 열풍으로 저조차도 파이썬이 대세처럼 여겨져 배우고 있습니다. 프로그래밍에 입문하거나 간단히 작성해 빠르게 사용하려면 좋은 언어라고 생각됩니다.</p>
+<p>파이썬을 활용하여 openxl, xlwings, pyxll 등 엑셀에서 python을 사용할 툴이 나와 있지만 그럼에도 VBA의 환경과 비교해서는 접근성이 높지 않습니다. 파이썬으로 작동하는 엑셀파일은 다른 사람의 컴퓨터에서도 동일하게 사용하려면 하려면 파이썬을 설치해야 하고 파이썬이 사용하는 라이브러리-모듈을 설치하는 작업이 필요합니다. 이는 생각처럼 모두가 동일조건에서 사용해야 할 조건이라면 문제를 발생할 조건이 됩니다. 그에 비하면 기본으로 설치된 VBA는 이러한 점에서는 문제점이 상대적으로 없습니다. <br><br></p>
+<p>파이썬을 활용한 엑셀작업은, 무료툴로는 현재로써는 가장 유명한 것이 xlwings입니다. 하지만 python을 각자의 컴퓨터에 설치해야 한다는 점은 여전히 고려해 볼만한 점이고 속도가 생각보다 빠르지 않습니다.</p>
+<p>OfficeJS Add-in은 Javascript라는 또다른 언어를 사용하야 합니다. 하지만 브라우저를 사용하는 Web버전, Desktop버전 모두 동작가능합니다. 설치는 엑셀의 <code>추가기능</code>항목에서 경로를 추가하거나 구입하기로 추가하면 사용이 가능합니다.</p>
+<p><br><br><br></p>
+<hr>
+<h2 id="배포의-문제"><a href="#배포의-문제" class="headerlink" title="배포의 문제"></a>배포의 문제</h2><p>xlwings나 vba나 모두 2가지가 번거롭거나 공개를 꺼려지는 사항은 마찬가지입니다</p>
+<ul>
+<li>첫째는 스크립트가 엑셀파일 자체에 귀속이 된다</li>
+<li>둘째는 시간을 들일 결과물이 공유하는 순간 쉽게 공유되어 버린다</li>
+</ul>
+<p>같이 사용하려고 만든 것도 있지만 본인의 작업&#x2F;일을 효율성을 높이려고 오랜시간 만들었는데 엑셀파일을 공유하는 순간순간 다른 사람에게도 이것을 열어볼 수 있습니다. 동료라면 모르겠지만 이것이 다른 회사, 외부인, VBA를 본인의 업으로 하는 사람에게는 민감한 사항이 될 수도 있습니다.</p>
+<p> 그런데, Web기반의 OfficeJS Addin은 Server에서 중요계산을 맡아 처리하면 이러한 부분이 어느 정도 해결이 가능해 집니다. 배포의 관점에서도 많은 코드 중에 몇 줄을 수정하려면 파일로 공유되었을 경우 일일이 그 파일을 수정해야 하지만 사실상 어렵습니다. Web Add-in은 중앙배포식이라 내가 가진 코드만 수정하면 이전 결과물에도 모두 적용이 가능합니다.</p>
+<p>접근 권한이나 파일의 공유 부분에서도 제한적으로 공개할 수 있으니 이러한 부분의 관리도 상대적으로 수월합니다.</p>
+<p><br><br><br></p>
+<hr>
+<h2 id="Office-add-in-를-사용가능한-환경"><a href="#Office-add-in-를-사용가능한-환경" class="headerlink" title="Office add-in 를 사용가능한 환경"></a>Office add-in 를 사용가능한 환경</h2><p>안타깝게도 VBA를 대신할 JavaScript기반의 CustomFunction은 모든 오피스 버전에서 지원하지는 않습니다.   </p>
+<p>설치버전은 2021년 이후 부터 (2019년 버전 사용불가), 구독형 Microsoft365은 항상 최신 버전이기에 시점에 상관없이 사용가능합니다.</p>
+<p><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/javascript/api/requirement-sets?view=common-js-preview">https://docs.microsoft.com/en-us/javascript/api/requirement-sets?view=common-js-preview</a></p>
+<img src="/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081812.png" class="">
+<img src="/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081823.png" class="">
+<img src="/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081834.png" class="">
+<img src="/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081844.png" class="">
+<img src="/2023/20230903-VBAtoOfficeJSAddin/2023-09-03T081855.png" class="">
+
+<p><br><br><br><br><br><br></p>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/VBA/">VBA</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="https://www.buymeacoffee.com/theangkko" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2023/20230923-error-pyenv-path-in-wsl/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">pyenv-win path error in WSL</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023/20230815-vba-helper-tools-3things/"><span class="level-item">VBA 작업을 빠르게 도와 줄 무료프로그램 3가지</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://theangkko.github.io/2023/20230903-VBAtoOfficeJSAddin/';
+            this.page.identifier = '2023/20230903-VBAtoOfficeJSAddin/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'theangkko-github-io' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><!--!--><div class="column column-right is-3-tablet is-3-desktop is-3-widescreen  order-3 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/images/logo_taeg_300.png" alt="theangkko"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">theangkko</p><p class="is-size-6 is-block">Mech.&amp; Process Engineer</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">44</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">5</p></a></div></div></nav><div class="level"><a class="level-item button is-info is-outlined is-rounded" href="/" target="_self" rel="noopener">Home</a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#개요"><span class="level-left"><span class="level-item">1</span><span class="level-item">개요</span></span></a></li><li><a class="level is-mobile" href="#Javascript가-아닌-파이썬은-어떤가"><span class="level-left"><span class="level-item">2</span><span class="level-item">Javascript가 아닌, 파이썬은 어떤가?</span></span></a></li><li><a class="level is-mobile" href="#배포의-문제"><span class="level-left"><span class="level-item">3</span><span class="level-item">배포의 문제</span></span></a></li><li><a class="level is-mobile" href="#Office-add-in-를-사용가능한-환경"><span class="level-left"><span class="level-item">4</span><span class="level-item">Office add-in 를 사용가능한 환경</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Google-Colab/"><span class="level-start"><span class="level-item">Google Colab</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/"><span class="level-start"><span class="level-item">Programming</span></span><span class="level-end"><span class="level-item tag">28</span></span></a><ul><li><a class="level is-mobile" href="/categories/Programming/Add-ins/"><span class="level-start"><span class="level-item">Add-ins</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/Excel-VBA/"><span class="level-start"><span class="level-item">Excel|VBA</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/engineering/"><span class="level-start"><span class="level-item">engineering</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://theangkko.github.io/eefunction-doc" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">eeFunction Docs</span></span><span class="level-right"><span class="level-item tag">theangkko.github.io</span></span></a></li><li><a class="level is-mobile" href="https://eefunction.pages.dev/webapp" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">IF97 SteamTable</span></span><span class="level-right"><span class="level-item tag">eefunction.pages.dev</span></span></a></li><li><a class="level is-mobile" href="https://eefunction-webapp-streamlit.fly.dev/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">eeStreamlit</span></span><span class="level-right"><span class="level-item tag">eefunction-webapp-streamlit.fly.dev</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/images/logo_taeg_300.png" alt="theangkko&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 theangkko</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>theangkko&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="theangkko&#039;s Blog"><meta name="msapplication-TileImage" content="/images/favicon_taeg_yellow.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="theangkko&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="tooltip for fluid &amp;amp; process engineering"><meta property="og:type" content="blog"><meta property="og:title" content="theangkko&#039;s Blog"><meta property="og:url" content="https://theangkko.github.io/"><meta property="og:site_name" content="theangkko&#039;s Blog"><meta property="og:description" content="tooltip for fluid &amp;amp; process engineering"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://theangkko.github.io/img/og_image.png"><meta property="article:author" content="theangkko"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://theangkko.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://theangkko.github.io"},"headline":"theangkko's Blog","image":["https://theangkko.github.io/img/og_image.png"],"author":{"@type":"Person","name":"theangkko"},"publisher":{"@type":"Organization","name":"theangkko's Blog","logo":{"@type":"ImageObject","url":"https://theangkko.github.io/images/logo_taeg_300.png"}},"description":"tooltip for fluid &amp; process engineering"}</script><link rel="icon" href="/images/favicon_taeg_yellow.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-dark-reasonable.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-863XY3DLGW" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-863XY3DLGW');</script><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo_taeg_300.png" alt="theangkko&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/eefunctionmanual">eeFunction</a><a class="navbar-item" href="/ddfunction">ddFunction</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-08-12T21:18:59.000Z" title="8/13/2023, 6:18:59 AM">2023-08-13</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-02-03T22:07:00.000Z" title="2/4/2024, 7:07:00 AM">2024-02-04</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230813-trytouploadmyappinMSstore/">Office Add-in AppStore 등록과정 살펴보기</a></p><div class="content">eeFunction과 Office Add-ins을 이제는 추가로 업데이트할 시간이 없다보니 그동안 알아왔던 것을 정리하고 등록함으로써 마무리를 지어볼까 하는 생각이 들었습니다. 
+
+그래서 App마다 별도 등록을 해야 하는 지금 형태가 불편하기에 Windows에서, Web브라우저별로 등록하는 것이 아닌 Excel Add-ins에서 바로 찾아서 쓰도록 AppStore에 등록하려고 두 달전 부터 틈틈이 준비를 해왔는데, 결국 포기를 하게 되었습니다.
+
+처음에는 Office365에서 Office전용 AppStore를 만들어두고 생각보다 앱</div><a class="article-more button is-small is-size-7" href="/2023/20230813-trytouploadmyappinMSstore/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-08-07T21:02:32.000Z" title="8/8/2023, 6:02:32 AM">2023-08-08</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-02-03T22:07:00.000Z" title="2/4/2024, 7:07:00 AM">2024-02-04</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Excel-VBA/">Excel|VBA</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230808-VBEDarkModeThemeQuick/">VBE DarkMode Theme Quick App</a></p><div class="content">2023-08-08 Link update
+
+
+
+
+
+What is
+엑셀의 VBA 작업을 하다보면, 다른 CODE IDE들처럼 Dark Mode에서 작업했으면 하는 생각이 듭니다.
+색상대비로 오류가 눈에 잘 띄어고 오랜 시간 모니터를 볼 때 조금은 편합니다. 
+다크모드를 적용하는 여러 방법이 있지만, VSCODE의 다크테마처럼 보이게 해주는 툴입니다.
+
+
+
+
+
+
+What’s Difference
+Office 정기업데이트는 수시로 일어납니다. 패치를 하고 나면 좌측화면처럼 VBE가 보이고 MS의 엑셀업데이트가 있고나면 패치가 풀려 오른쪽 </div><a class="article-more button is-small is-size-7" href="/2023/20230808-VBEDarkModeThemeQuick/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-08-02T16:03:58.000Z" title="8/3/2023, 1:03:58 AM">2023-08-03</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-02-03T22:07:00.000Z" title="2/4/2024, 7:07:00 AM">2024-02-04</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Excel-VBA/">Excel|VBA</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230803-vbadarkmodesettingbyREGISTRY/">WinRegistry for VBE DarkMode Quick Set-up</a></p><div class="content">VBA의 기본 색상정보는 흰색 바탕에 검은 색 글자입니다.
+유튜브 강좌나 블로그 글을 보면 이와 다르게, 검은 색 바탕색에 다양한 글자색으로 표현되는 DARK MODE를 사용하는 것을 볼 수 있습니다. 
+
+이를 적용해 보고자 사용자가 많은 네이버에서 검색을 하면 오히려 오래 전 글이나 엉뚱한 글이 같이 검색됩니다. 그래서 설정이 쉬운 반면 생각보다 사용자가 많지 않는 듯 합니다.
+
+외국 블로그나 Medium 같은 사이트에는 잘 설명된 것들이 많지만 이 것도 따라하기 귀찮다, 영어라서 어렵다 하시면 아래 REGISTRY를 다운받아서 </div><a class="article-more button is-small is-size-7" href="/2023/20230803-vbadarkmodesettingbyREGISTRY/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-31T13:25:36.000Z" title="7/31/2023, 10:25:36 PM">2023-07-31</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-02-03T22:07:00.000Z" title="2/4/2024, 7:07:00 AM">2024-02-04</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230731-PDFtoolspy-pdfunpw-noAnnot/">PDFtools-py_ PDF 주석 일괄제거, 암호제거</a></p><div class="content">2023-07-31 python version issue
+
+
+https://github.com/theangkko/PDFtools-py/releases/latest
+
+파이썬, 신규 버전
+파일을 하나씩 선택해야 하지만, 오류가 상대적으로 c#버전에 비해 적습니다.
+
+
+주요기능
+ * PDF내 주석을 일괄삭제합니다
+ * PDF수정보호(자물쇠) 상태를 해제합니다
+
+사용가능환경)
+ * 윈도우
+ * MacOS
+   Mac에서는.py 소스코드로는 실행가능한데, pyinstaller(실행파일 1개로 만드는) 오류로 독립 실행파일로는 동작하지 않습니</div><a class="article-more button is-small is-size-7" href="/2023/20230731-PDFtoolspy-pdfunpw-noAnnot/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-13T16:58:57.000Z" title="7/14/2023, 1:58:57 AM">2023-07-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-02-03T22:07:00.000Z" title="2/4/2024, 7:07:00 AM">2024-02-04</time></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Excel-VBA/">Excel|VBA</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/20230714-excelAddin-AtmyAddin/">excelAddin - 앳마의블로그 myAddin2023</a></p><div class="content">엑셀 작업을 하다보면 이럴 때가 있죠?
+
+ * 반복작업으로 귀찮거나 
+ * 보이지 않는 공백으로 원하지 않는 결과를 얻게 되거나
+ * 특정영역을 복사해서 새로운 곳에 복사하는 등…
+
+엑셀에 이미 있을 것 같은 기능들인데 아쉽게도 없습니다.
+
+이 때 앳마의 Excel Addin을 살펴보면 필요한 기능의 상당부분을 발견할 수 있습니다. 
+
+엑셀을 자주 사용한다!
+그럼, VBA 배우세요!!. 
+
+하지만 VBA로 필요한 기능을 만들지는 마세요. 누군가는 이미 만들어서 공개한 것이 있을테니깐요.
+
+(15년 넘게 써온, 아주 좋은 애드인 입니</div><a class="article-more button is-small is-size-7" href="/2023/20230714-excelAddin-AtmyAddin/#more">Read more</a></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/2/">Previous</a></div><div class="pagination-next"><a href="/page/4/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><a class="pagination-link is-current" href="/page/3/">3</a></li><li><a class="pagination-link" href="/page/4/">4</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/9/">9</a></li></ul></nav></div><!--!--><div class="column column-right is-3-tablet is-3-desktop is-3-widescreen  order-3 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/images/logo_taeg_300.png" alt="theangkko"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">theangkko</p><p class="is-size-6 is-block">Mech.&amp; Process Engineer</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">44</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">5</p></a></div></div></nav><div class="level"><a class="level-item button is-info is-outlined is-rounded" href="/" target="_self" rel="noopener">Home</a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Google-Colab/"><span class="level-start"><span class="level-item">Google Colab</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/"><span class="level-start"><span class="level-item">Programming</span></span><span class="level-end"><span class="level-item tag">28</span></span></a><ul><li><a class="level is-mobile" href="/categories/Programming/Add-ins/"><span class="level-start"><span class="level-item">Add-ins</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/Excel-VBA/"><span class="level-start"><span class="level-item">Excel|VBA</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/engineering/"><span class="level-start"><span class="level-item">engineering</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://theangkko.github.io/eefunction-doc" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">eeFunction Docs</span></span><span class="level-right"><span class="level-item tag">theangkko.github.io</span></span></a></li><li><a class="level is-mobile" href="https://eefunction.pages.dev/webapp" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">IF97 SteamTable</span></span><span class="level-right"><span class="level-item tag">eefunction.pages.dev</span></span></a></li><li><a class="level is-mobile" href="https://eefunction-webapp-streamlit.fly.dev/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">eeStreamlit</span></span><span class="level-right"><span class="level-item tag">eefunction-webapp-streamlit.fly.dev</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/images/logo_taeg_300.png" alt="theangkko&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 theangkko</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
