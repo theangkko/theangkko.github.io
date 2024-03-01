@@ -1,3 +1,4 @@
+https://theangkko.github.io/eefunctionmanual/index.html
 https://theangkko.github.io/2024/240116-eefunction-log/
 https://theangkko.github.io/privacy/
 https://theangkko.github.io/notice/
@@ -44,6 +45,5 @@ https://theangkko.github.io/2024/240203-delete-excel-addin-cache/
 https://theangkko.github.io/2024/240204-material-property-in-matweb/
 https://theangkko.github.io/ddfunction/index.html
 https://theangkko.github.io/about/index.html
-https://theangkko.github.io/eefunctionmanual/index.html
 https://theangkko.github.io/eefunctionunit/index.html
 https://theangkko.github.io/
