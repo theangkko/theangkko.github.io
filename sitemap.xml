@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://theangkko.github.io/notice/</loc>
+    <loc>https://theangkko.github.io/privacy/</loc>
     
     <lastmod>2026-01-05</lastmod>
     
@@ -11,7 +11,25 @@
   </url>
   
   <url>
-    <loc>https://theangkko.github.io/privacy/</loc>
+    <loc>https://theangkko.github.io/2023/20230710-SearchFluidPropertyInGoogle/</loc>
+    
+    <lastmod>2026-01-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://theangkko.github.io/2024/240203-delete-excel-addin-cache/</loc>
+    
+    <lastmod>2026-01-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://theangkko.github.io/notice/</loc>
     
     <lastmod>2026-01-05</lastmod>
     
@@ -30,15 +48,6 @@
   
   <url>
     <loc>https://theangkko.github.io/2024/240204-material-property-in-matweb/</loc>
-    
-    <lastmod>2026-01-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://theangkko.github.io/2024/240203-delete-excel-addin-cache/</loc>
     
     <lastmod>2026-01-05</lastmod>
     
@@ -165,15 +174,6 @@
   
   <url>
     <loc>https://theangkko.github.io/2023/20230710-ControlValvesizingOnline/</loc>
-    
-    <lastmod>2026-01-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://theangkko.github.io/2023/20230710-SearchFluidPropertyInGoogle/</loc>
     
     <lastmod>2026-01-05</lastmod>
     
